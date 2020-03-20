@@ -1,8 +1,8 @@
-[Livrables](https://github.com/arubinst/HEIGVD-SWI-Labo2-WEP#livrables)
+[Livrables](https://github.com/arubinst/HEIGVD-SWI-Labo-WEP3#livrables)
 
-[Échéance](https://github.com/arubinst/HEIGVD-SWI-Labo2-WEP#échéance)
+[Échéance](https://github.com/arubinst/HEIGVD-SWI-Labo3-WEP#échéance)
 
-[Travail à réaliser](https://github.com/arubinst/HEIGVD-SWI-Labo2-WEP#travail-à-réaliser)
+[Travail à réaliser](https://github.com/arubinst/HEIGVD-SWI-Labo3-WEP#travail-à-réaliser)
 
 # Sécurité des réseaux sans fil
 
@@ -112,26 +112,6 @@ Dans cette partie, vous allez enrichir votre script développé dans la partie p
 - Pour un test encore plus intéressant (optionnel), vous pouvez utiliser un AP (disponible sur demande) et envoyer vos fragments. Pour que l’AP accepte vous données injectées, il faudra faire une « fake authentication » que vous pouvez faire avec `aireplay-ng`
 - Si l’AP accepte vos fragments, il les recomposera et les retransmettra en une seule trame non-fragmentée !
 
-
-### 4. Shared-key fake authentication (bonus)
-
-**ATTENTION :  il y aura un bonus de 0.3 points dans le TE1 pour la première équipe qui rendra cet exercice terminé. Un bonus de 0.1 points pour les équipes suivantes**
-
-Cet exercice nécessite l’utilisation d’un AP WEP configuré en mode d’authentification clé partagée (disponible sur demande).
-
-Le but c’est de réussir une authentification auprès de l’AP sans connaître la clé WEP. Vous devrez :
-
-- Configurer l’AP en WEP avec une clé connue, configurer l’authentification clé partagée et capturer un processus d’authentification et l’enregistrer dans un fichier .cap (voir fichier exemple `exercice_4.cap`.
-- Ensuite, vous devez développer un script capable d’utiliser votre capture pour réaliser une authentification **sans utiliser la clé WEP**.
-
-
-###Quelques éléments à considérer :
-
-- La plupart des problèmes provient souvent du formatage de l’ICV (endianness, format, etc.). C’est donc une voie à explorer si vous n’arrivez pas à communiquer correctement avec l’AP (voir les scripts de base, chercher sur Internet, etc.)
-- Pour le challenge « authentification », vous devez « entamer une conversation » avec l’AP. Scapy fournit une commande capable d’envoyer un seul paquet, en attendre la réponse et continuer l’exécution du script
-- Attention à la taille du challenge et de la réponse chiffrée… !!!
-
-
 ## Livrables
 
 Un fork du repo original . Puis, un Pull Request contenant :
@@ -142,12 +122,10 @@ Un fork du repo original . Puis, un Pull Request contenant :
 -	Script de fragmentation **abondamment commenté/documenté**
   - Fichier pcap généré par votre script contenant les fragments
   - Capture d’écran de vos trames importées et déchiffrés par Wireshark 
--	**(Challenge optionnel)** Script d’authentification clé partagée **abondamment commenté/documenté**
-  - Capture d’écran de votre authentification vue par Wireshark
 
 -	Envoyer le hash du commit et votre username GitHub par email au professeur et à l'assistant
 
 
 ## Échéance
 
-Le 07 avril 2019 à 23h00
+Le 03 avril 2020 à 23h00
