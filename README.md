@@ -15,7 +15,6 @@ __A faire en équipes de deux personnes__
 * Déchiffrer manuellement des trames WEP utilisant Python et Scapy
 * Chiffrer manuellement des trames WEP utilisant Python et Scapy
 * Forger des fragments protégés avec WEP afin d’obtenir une keystream de longueur plus grande que 8 octets
-* Contourner l’authentification « clé partagée » (bonus)
 
 
 Vous allez devoir faire des recherches sur internet pour apprendre à utiliser Scapy et la suite aircrack pour vos manipulations. __Il est fortement conseillé d'employer une distribution Kali__ (on ne pourra pas assurer le support avec d'autres distributions). __Si vous utilisez une VM, il vous faudra une interface WiFi usb, disponible sur demande__.
@@ -89,7 +88,7 @@ Utilisant le script `manual-decryption.py` comme guide, créer un nouveau script
 Vous devrez donc créer votre message, calculer le contrôle d’intégrité (ICV), et les chiffrer (voir slides du cours pour les détails).
 
 
-###Quelques éléments à considérer :
+### Quelques éléments à considérer :
 
 - Vous pouvez utiliser la même trame fournie comme « template » pour votre trame forgée (conseillé). Il faudra mettre à jour le champ de données qui transporte le message (`wepdata`) et le contrôle d’intégrite (`icv`).
 - Le champ `wepdata` accepte des données en format text.
@@ -102,7 +101,7 @@ Vous devrez donc créer votre message, calculer le contrôle d’intégrité (IC
 
 Dans cette partie, vous allez enrichir votre script développé dans la partie précédente pour chiffrer 3 fragments.
 
-###Quelques éléments à considérer :
+### Quelques éléments à considérer :
 
 - Chaque fragment est numéroté. La première trame d’une suite de fragments a toujours le numéro de fragment à 0. Une trame entière (sans fragmentation) comporte aussi le numéro de fragment égal à 0
 - Pour incrémenter le compteur de fragments, vous pouvez utiliser le champ « SC » de la trame. Par exemple : `trame.SC += 1`
@@ -128,4 +127,4 @@ Un fork du repo original . Puis, un Pull Request contenant :
 
 ## Échéance
 
-Le 03 avril 2020 à 23h00
+Le 03 avril 2020 à 23h59
