@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """ Manually decrypt a wep message given the WEP key"""
@@ -43,3 +43,4 @@ text_enclair=cleartext[:-4]
 print ('Text: ' + text_enclair.hex())
 print ('icv:  ' + icv_enclair.hex())
 print ('icv(num): ' + str(icv_numerique))
+

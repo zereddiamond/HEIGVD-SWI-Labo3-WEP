@@ -118,10 +118,13 @@ Un fork du repo original . Puis, un Pull Request contenant :
 -	Script de chiffrement WEP **abondamment commenté/documenté**
   - Fichier pcap généré par votre script contenant la trame chiffrée
   - Capture d’écran de votre trame importée et déchiffré par Wireshark
+  ![Encryption](./files/task2_encryption.png)
+  Ci-dessus, une capture d'écran de notre trame déchiffrée par Wireshark. Dans le champ Data, nous pouvons voir le text "Voici une trame encryptee pour test" qui a été encryptée via le script "manual-encryption.py". 
 -	Script de fragmentation **abondamment commenté/documenté**
   - Fichier pcap généré par votre script contenant les fragments
   - Capture d’écran de vos trames importées et déchiffrés par Wireshark 
-
+  ![Fragmentation](./files/task3_fragmentation.png)
+  Ci-dessus, une capture d'écran de nos trois fragments déchiffré par Wireshark. La fragmentation et l'encryption se fait via le script "manual-fragmentation.py".
 -	Envoyer le hash du commit et votre username GitHub par email au professeur et à l'assistant
 
 
